@@ -16,9 +16,8 @@ class RedViewController: UIViewController {
     @IBAction private func button(_ sender: Any) {
         textField1.resignFirstResponder()
         textField2.resignFirstResponder()
-        guard let num1 = Int(textField1.text!)  else { return }
-        guard let num2 = Int(textField2.text!)  else { return }
+        guard let num1 = Int(textField1.text!) else { return }
+        guard let num2 = Int(textField2.text!) else { return }
         label.text = String(num1 + num2)
     }
 }
-
